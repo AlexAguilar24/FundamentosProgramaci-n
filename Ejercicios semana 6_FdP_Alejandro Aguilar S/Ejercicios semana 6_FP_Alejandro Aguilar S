@@ -1,0 +1,92 @@
+# Ejercicio 1: CONCATENACIÓN
+print("Ejercicio 1\n")
+
+canciones_dia = ("Feels", "Teach me how to doughie", "Love me")
+canciones_noche = ("Instant Cruse", "Not too you")
+
+playlist_completa = canciones_dia + canciones_noche
+print(canciones_dia)
+print(canciones_noche)
+print(playlist_completa)
+
+# Ejercicio 2: Combinar coordenadas de ubicaciones
+print("\nEjercicio 2\n")
+ubicaciones_norte = ((19.5, -99.2), (19.6, -99.3))
+ubicaciones_sur = ((19.4, -99.1), (19.3, -99.4))
+
+todas_ubicaciones = ubicaciones_norte + ubicaciones_sur
+print(ubicaciones_norte)
+print(ubicaciones_sur)
+print(todas_ubicaciones, "\n")
+
+# Ejercicio 3: REPETICIÓN (Multiplicar tupla)
+print("\nEjercicio 3 - Repetición\n")
+
+emojis = ("🐒", "🥀")
+cartel = emojis * 5
+print(emojis)
+print(cartel, "\n")
+
+# Ejercicio 4: LONGITUD(Contar elementos)
+print("\nEjercicio 4 - Longitud\n")
+
+seguidores_tiktok = 1500
+seguidores_insta = 600
+seguidores_fb = 540
+seguidores_total = seguidores_tiktok + seguidores_insta + seguidores_fb
+seguidores = (seguidores_tiktok, seguidores_insta, seguidores_fb)
+cantidad_redes = len(seguidores)
+
+print("Seguidores en TikTok:", seguidores_tiktok)
+print("Seguidores en Instagram:", seguidores_insta)
+print("Seguidores en Facebook:", seguidores_fb)
+print("Total de sguidores:", seguidores_total)
+print("Cantidad de redes sociales:", cantidad_redes)
+
+# Ejercicio 5: OCURRENCIAS(Count)
+print("\nEjercicio 5\n")
+
+resultados_partidas = ("gané", "perdí", "gané", "gané", "perdí", "gané", "empate")
+veces_gane = resultados_partidas.count("gané")
+print("He ganado:", veces_gane)
+
+# Ejercicio 6: ENCONTRAR POSICIÓN(index)
+print("\nEjercicio 6\n")
+
+ranking = ("Luis", "Melina", "Javier", "Natalia", "Jorge", "Alex", "Erik", "Rocio")
+mi_posicion = ranking.index("Alex")
+print("Estoy en la posición:", mi_posicion, "\n")
+
+# Ejercicio 7: ACCEDER A UN RANGO(slicing)
+print("\nEjercicio 7 - slicing\n")
+
+juegos = ("Minecraft", "Fortnite", "Rocket League", "Call of Duty", "Ghost of Tsushima", "Red Dead Redemption 2", "God of War")
+ultimos_tres = juegos[2:5]
+print(ultimos_tres)
+
+# Ejercicio 8: RECORRER UNA TUPLA(for)
+print("\nEjercicio 8 - recorrer tupla\n")
+
+canciones = ("TILL FURTHER NOTICE", "Rock with you", "I KNOW?", "Flashing lights")
+
+for cancion in canciones:
+    print(cancion)
+
+# Ejercicio 9: VEREFICAR UN ELEMENTO EXISTE(in)
+print("\nEjercicio 9 - verificar si un elemento existe\n")
+
+grupo_proyecto = ("Meli", "Rocio", "Erik", "Alex")
+
+print("Integrantes del equipo", grupo_proyecto)
+print("\n¿Natalia está en el grupo?")
+print("Natalia" in grupo_proyecto)
+
+print("\n¿Orlando está en el grupo?")
+print("Orlando" in grupo_proyecto)
+
+# Ejercicio 10: ORDENAR ELEMENTOS(sorted)
+print("\nEjercicio 10 - ordenar la tupla\n")
+
+puntuaciones = (560, 240, 1020, 380, 720, 2580, 670, 137, 997)
+puntuaciones_ordenadas = tuple(sorted(puntuaciones))
+print(puntuaciones_ordenadas)
